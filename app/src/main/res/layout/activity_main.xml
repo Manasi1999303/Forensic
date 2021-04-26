@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/call_logs_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/btn_background"
+        android:textColor="@android:color/white"
+        android:text="Call logs"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/sms_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/btn_background"
+        android:textColor="@android:color/white"
+        android:text="SMs"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/call_logs_btn"
+        app:layout_constraintStart_toStartOf="@+id/call_logs_btn"
+        app:layout_constraintTop_toBottomOf="@+id/call_logs_btn" />
+
+    <Button
+        android:id="@+id/contacts_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/btn_background"
+        android:textColor="@android:color/white"
+        android:text="Contacts"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/sms_btn"
+        app:layout_constraintStart_toStartOf="@+id/sms_btn"
+        app:layout_constraintTop_toBottomOf="@+id/sms_btn" />
+
+    <Button
+        android:id="@+id/mobile_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/btn_background"
+        android:textColor="@android:color/white"
+        android:text="Mobile Details"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/contacts_btn"
+        app:layout_constraintStart_toStartOf="@+id/contacts_btn"
+        app:layout_constraintTop_toBottomOf="@+id/contacts_btn" />
+</androidx.constraintlayout.widget.ConstraintLayout>
